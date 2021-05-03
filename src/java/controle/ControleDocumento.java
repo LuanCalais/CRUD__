@@ -73,8 +73,7 @@ public class ControleDocumento extends HttpServlet {
                 RequestDispatcher rd = request.getRequestDispatcher("listaestoque.jsp");
                 rd.forward(request, response);
                 
-            /*}   else if("Listar ID".equals(opc)){
-                modelo.Documentos doc = new modelo.Documentos();
+            }   else if("Listar ID".equals(opc)){
                 int Id = Integer.parseInt(request.getParameter("txtId"));
                 dao.DocumentosDAO dao = new dao.DocumentosDAO();
                 
@@ -82,7 +81,7 @@ public class ControleDocumento extends HttpServlet {
                 request.setAttribute("listaDocumentos", documentos);
                 
                 RequestDispatcher rd = request.getRequestDispatcher("listaestoque.jsp");
-                rd.forward(request, response) tentar mais se houver tempo;*/
+                rd.forward(request, response);
                 
                 
             }else if("Deletar".equals(opc)){

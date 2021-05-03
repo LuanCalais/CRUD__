@@ -74,30 +74,31 @@ public class DocumentosDAO {
         return resultado;
     }
     
-    /*
+    
     public ArrayList<Documentos> listarId(int id){
         ArrayList<Documentos> resultado = new ArrayList();
-        Connection conexao = null;
         try{
-            conexao = ConectaBanco.getConexao();
+            Connection conexao = ConectaBanco.getConexao();
             PreparedStatement pstmt = conexao.prepareStatement(SELECT_ID);
             pstmt.setInt(1, id);
-            Statement stmt = conexao.createStatement();
-            ResultSet rs = stmt.executeQuery(SELECT_ID);
+            pstmt.execute();
+            
+            ResultSet rs = pstmt.executeQuery();
            
+            while(rs.next()){
                 Documentos doc = new Documentos();
                 doc.setId(rs.getInt("id_doc"));
                 doc.setDescricao(rs.getString("descricao"));
                 doc.setData(rs.getString("data_doc"));
                 doc.setTipo(rs.getString("tipo_doc"));
                 resultado.add(doc);
-            
+                }
             
         }catch(Exception e){
             throw new RuntimeException(e);
         }
         return resultado;
-    }*/
+    }
     
     
        public void delete(Documentos documento) throws ClassNotFoundException, SQLException {

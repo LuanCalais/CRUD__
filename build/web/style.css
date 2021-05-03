@@ -243,13 +243,12 @@ table:hover{font-family: 'Merriweather', serif;
     background-color: black;
 }
 
-/*
 #listarId{font-family: 'Merriweather', serif;
     font-size: 19px;
     font-weight: bold;
     position: absolute;
     top: 500px;
-    left: 635px;
+    left: 400px;
     background-color: #008080;
 }
 
@@ -258,11 +257,10 @@ table:hover{font-family: 'Merriweather', serif;
     font-weight: bold;
     position: absolute;
     top: 500px;
-    left: 635px;
+    left: 400px;
     color: #008080;
     background-color: black;
 }
-*/
 
 #deletar{font-family: 'Merriweather', serif;
     font-size: 19px;

@@ -20,8 +20,15 @@ public class TesteListaId {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        DocumentosDAO dao = new DocumentosDAO();
+        ArrayList<Documentos> lista = dao.listarId(2);
         
-        
+        for(Documentos d : lista){
+            System.out.println(d.getId());
+            System.out.println(d.getDescricao());
+            System.out.println(d.getTipo());
+            System.out.println(d.getData());
+        }
         
     }
     
